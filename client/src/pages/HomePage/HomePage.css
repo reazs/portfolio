@@ -1,0 +1,18 @@
+.outline-btn {
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px 30px;
+  color: teal;
+  display: inline-block;
+
+  border: 2px solid teal;
+  box-shadow: inset 0 0 0 0 teal;
+  transition: ease-out 0.35s;
+  display: inline-block;
+}
+
+.outline-btn:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 teal;
+  cursor: pointer;
+}
