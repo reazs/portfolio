@@ -9,6 +9,12 @@ import {
 } from "@material-tailwind/react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
+import ProjectPage from "../pages/ProjectsPage/ProjectPage";
+import RangBazaarDetails from "../pages/ProjectDetails/RangBazaarDetails";
+import RecipeHeistDetails from "../pages/ProjectDetails/RecipeHeistDetails";
+import CunyZeroDetails from "../pages/ProjectDetails/CunyZeroDetails";
+import SpamFilterDetails from "../pages/ProjectDetails/SpamFilterDetails";
+import CallbackCatsDetails from "../pages/ProjectDetails/CallbackCatsDetails";
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -27,7 +33,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/home" className="flex items-center">
           Home
         </a>
       </Typography>
@@ -37,7 +43,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/projects" className="flex items-center">
           Projects
         </a>
       </Typography>
@@ -137,6 +143,15 @@ export function StickyNavbar() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectPage />} />
+        <Route path="/projects/rangbazaar" element={<RangBazaarDetails />} />
+        <Route path="/projects/recipe-heist" element={<RecipeHeistDetails />} />
+        <Route path="/projects/cuny-zero" element={<CunyZeroDetails />} />
+        <Route path="/projects/spam-filter" element={<SpamFilterDetails />} />
+        <Route
+          path="/projects/callback-cats"
+          element={<CallbackCatsDetails />}
+        />
       </Routes>
     </>
   );

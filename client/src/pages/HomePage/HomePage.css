@@ -16,3 +16,22 @@
   box-shadow: inset 0 -100px 0 0 teal;
   cursor: pointer;
 }
+
+.primary-btn > p {
+  color: white;
+}
+.primary-btn > p {
+  margin: 0;
+}
+.primary-btn {
+  padding: 20px 10%;
+  color: white;
+  background-color: #27496d;
+  box-shadow: inset 0 0 0 0 teal;
+  transition: ease-out 0.35s;
+  display: inline-block;
+}
+.primary-btn:hover {
+  box-shadow: inset 280px 0 0 0 teal;
+  cursor: pointer;
+}
