@@ -13,10 +13,10 @@ const AboutTopDiv = () => {
             </h1>
           </Reveal>
         </div>
-        <div className="mt-[50px] grid grid-cols-2 gap-5">
-          <div>
+        <div className="mt-[50px] grid lg:grid-cols-2 gap-5">
+          <div className="mx-auto">
             <SlideTransition>
-              <img src={reazProfile} className="rounded-md " />
+              <img src={reazProfile} className="rounded-md max-h-[400px]  " />
             </SlideTransition>
           </div>
           <div className="flex flex-row justify-center items-center">
