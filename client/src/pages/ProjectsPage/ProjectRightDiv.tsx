@@ -8,7 +8,7 @@ const ProjectRightDiv = () => {
         <div className="p-5  text-start">
           <img className="h-[250px] w-full object-cover" src={rangBazaarDemo} />
           <h3 className="lg:text-3xl text-2xl font-['Montserrat']  ">
-            RangBazaar
+            rangbazaar
           </h3>
           <hr className="my-3" />
           <p className=" line-clamp-3 sm:text-xl text-sm font-['Quicksand']">

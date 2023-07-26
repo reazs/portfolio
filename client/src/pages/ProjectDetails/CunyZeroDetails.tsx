@@ -17,7 +17,7 @@ const CunyZeroDetails = () => {
           <h1 className="lg:text-[3.5rem] sm:text-[2.8rem] text-[1.5rem] font-['Poppins']">
             CUNY Zero
           </h1>
-          <p className="mt-5 mb-10">
+          <p className="lg:mt-5 mb-10">
             As a collaborative team member, I played an integral role in
             designing and developing a user-friendly website for CUNY Zero. Our
             primary goal was to create a seamless platform that facilitates
@@ -94,6 +94,16 @@ const CunyZeroDetails = () => {
             Technology is constantly evolving, and this experience reinforced
             the importance of staying curious and embracing new tools and
             techniques in web development.
+          </p>
+          <hr className="my-5" />
+          <p>
+            <strong>GitHub Repository:</strong>{" "}
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/reazs/cunyZero"
+            >
+              https://github.com/reazs/cunyZero
+            </a>
           </p>
         </div>
 

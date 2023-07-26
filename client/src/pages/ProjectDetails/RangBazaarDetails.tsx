@@ -83,6 +83,16 @@ const RangBazaarDetails = () => {
             we hope that Rangbazaar will provide a seamless shopping experience
             for all our valued customers.
           </p>
+          <hr className="my-5" />
+          <p>
+            <strong>GitHub Repository:</strong>{" "}
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/reazs/rangbazar"
+            >
+              https://github.com/reazs/rangbazar
+            </a>
+          </p>
         </div>
 
         {/* extra space */}

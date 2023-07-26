@@ -69,6 +69,16 @@ const RecipeHeistDetails = () => {
               </li>
             </ul>
           </p>
+          <hr className="my-5" />
+          <p>
+            <strong>GitHub Repository:</strong>{" "}
+            <a
+              className="text-blue-500 underline"
+              href="https://github.com/reazs/recipe-heist"
+            >
+              https://github.com/reazs/recipe-heist
+            </a>
+          </p>
         </div>
         {/* extra space */}
         <div className="h-[300px]"></div>
