@@ -3,9 +3,7 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";

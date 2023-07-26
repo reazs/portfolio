@@ -1,6 +1,6 @@
 import HomeLeftDiv from "./HomeLeftDiv";
 import "./HomePage.css";
-import Rive, { useRive, Alignment, Layout, Fit } from "rive-react";
+import { useRive, Alignment, Layout, Fit } from "rive-react";
 
 const HomePage = () => {
   const { RiveComponent } = useRive({

@@ -1,4 +1,4 @@
-import Rive, { useRive, Fit, Layout, Alignment } from "rive-react";
+import { useRive } from "rive-react";
 import ProjectRightDiv from "./ProjectRightDiv";
 import { ProjectsModel } from "../../models/ProjectsModel";
 import ProjectCardTile from "../../components/ProjectCardTile";

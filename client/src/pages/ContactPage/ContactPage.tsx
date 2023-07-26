@@ -1,4 +1,4 @@
-import { useRive, Fit } from "rive-react";
+import { useRive } from "rive-react";
 const ContactPage = () => {
   const { RiveComponent } = useRive({
     src: "/riveAssets/toemater_timer.riv",
