@@ -2,25 +2,26 @@ import Rive, { useRive, Fit, Layout, Alignment } from "rive-react";
 import ProjectRightDiv from "./ProjectRightDiv";
 import { ProjectsModel } from "../../models/ProjectsModel";
 import ProjectCardTile from "../../components/ProjectCardTile";
+import { Reveal } from "../../animations/Reveal";
 const ProjectPage = () => {
   const { RiveComponent } = useRive({
     src: "/riveAssets/toemater_timer.riv",
     stateMachines: "State Machine 1",
     autoplay: true,
-    layout: new Layout({
-      alignment: Alignment.Center,
-      fit: Fit.Contain,
-    }),
   });
   return (
     <>
       <div className=" max-w-screen-xl mx-auto">
-        <div className="grid lg:grid-cols-2 lg:mt-[100px] mx-5 text-center">
-          <div className="lg:max-h-[380px] max-h-[380px]   ">
-            <h1 className="lg:text-[3.2rem] text-[2.8rem] font-['Poppins'] font-bold text-[#27496d]">
+        <div className="flex flex-row justify-center mt-[100px]">
+          <Reveal>
+            <h1 className=" text-center lg:text-7xl text-[2.8rem] font-['Poppins'] font-bold text-[#37393a]">
               Recent Work
             </h1>
-            <div className="h-full w-[99%] relative bottom-[40px]">
+          </Reveal>
+        </div>
+        <div className="grid lg:grid-cols-2 lg:mt-[100px] mx-5 text-center">
+          <div className="lg:max-h-[380px] max-h-[380px]   ">
+            <div className="h-full  w-[99%] relative bottom-[40px]">
               <RiveComponent />
             </div>
           </div>

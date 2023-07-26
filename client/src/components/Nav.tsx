@@ -15,6 +15,8 @@ import RecipeHeistDetails from "../pages/ProjectDetails/RecipeHeistDetails";
 import CunyZeroDetails from "../pages/ProjectDetails/CunyZeroDetails";
 import SpamFilterDetails from "../pages/ProjectDetails/SpamFilterDetails";
 import CallbackCatsDetails from "../pages/ProjectDetails/CallbackCatsDetails";
+import AboutPage from "../pages/AboutPage/AboutPage";
+import ContactPage from "../pages/ContactPage/ContactPage";
 export function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
 
@@ -53,7 +55,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/about" className="flex items-center">
           About
         </a>
       </Typography>
@@ -63,7 +65,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/contact" className="flex items-center">
           Contact
         </a>
       </Typography>
@@ -152,6 +154,8 @@ export function StickyNavbar() {
           path="/projects/callback-cats"
           element={<CallbackCatsDetails />}
         />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </>
   );
