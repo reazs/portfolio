@@ -33,7 +33,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/home" className="flex items-center">
+        <a href="/portfolio/home" className="flex items-center">
           Home
         </a>
       </Typography>
@@ -43,7 +43,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/projects" className="flex items-center">
+        <a href="/portfolio/projects" className="flex items-center">
           Projects
         </a>
       </Typography>
@@ -53,7 +53,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/about" className="flex items-center">
+        <a href="/portfolio/about" className="flex items-center">
           About
         </a>
       </Typography>
@@ -63,7 +63,7 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="/contact" className="flex items-center">
+        <a href="/portfolio/contact" className="flex items-center">
           Contact
         </a>
       </Typography>
@@ -77,7 +77,7 @@ export function StickyNavbar() {
           <div className="flex items-center justify-between text-blue-gray-900 mx-5">
             <Typography
               as="a"
-              href="#"
+              href="/portfolio/"
               className="mr-4 cursor-pointer py-1.5 font-medium text-2xl font-['Poppins'] "
             >
               <span className="text-red-400">R</span>
@@ -141,19 +141,31 @@ export function StickyNavbar() {
       </div>
       {/* links */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectPage />} />
-        <Route path="/projects/rangbazaar" element={<RangBazaarDetails />} />
-        <Route path="/projects/recipe-heist" element={<RecipeHeistDetails />} />
-        <Route path="/projects/cuny-zero" element={<CunyZeroDetails />} />
-        <Route path="/projects/spam-filter" element={<SpamFilterDetails />} />
+        <Route path="/portfolio/" element={<HomePage />} />
+        <Route path="/portfolio/home" element={<HomePage />} />
+        <Route path="/portfolio/projects" element={<ProjectPage />} />
         <Route
-          path="/projects/callback-cats"
+          path="/portfolio/projects/rangbazaar"
+          element={<RangBazaarDetails />}
+        />
+        <Route
+          path="/portfolio/projects/recipe-heist"
+          element={<RecipeHeistDetails />}
+        />
+        <Route
+          path="/portfolio/projects/cuny-zero"
+          element={<CunyZeroDetails />}
+        />
+        <Route
+          path="/portfolio/projects/spam-filter"
+          element={<SpamFilterDetails />}
+        />
+        <Route
+          path="/portfolio/projects/callback-cats"
           element={<CallbackCatsDetails />}
         />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/portfolio/about" element={<AboutPage />} />
+        <Route path="/portfolio/contact" element={<ContactPage />} />
       </Routes>
     </>
   );
