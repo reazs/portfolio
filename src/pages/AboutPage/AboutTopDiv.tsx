@@ -26,9 +26,9 @@ const AboutTopDiv = () => {
                 className="text-xl font-['Quicksand']"
               >
                 My name is Reaz Shakil. I am a Computer Science student from NYC
-                aspiring to be a Data Scientist. I have experience in both front
-                end and back end development. I enjoy learning new things and
-                trying to experiment with different ideas.
+                aspiring to be a Web Developer. I have experience in both
+                front-end and back-end development. I enjoy learning new things
+                and trying to experiment with different ideas.
               </p>
               <p className="mt-5 sm:text-xl font-bold text-gray-400">
                 Keep Learning and Enjoying!

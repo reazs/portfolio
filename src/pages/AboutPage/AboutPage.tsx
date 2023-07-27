@@ -16,7 +16,7 @@ const AboutPage = () => {
           </Reveal>
           <p className="my-5  ">
             The City College Of New York, Grove School of Engineering, New York
-            City, NY - 2023
+            City, NY - 2022
           </p>
           <Reveal>
             <h5 className="sm:text-3xl text-2xl  font-bold text-[#37393a]">
